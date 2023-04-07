@@ -3,9 +3,7 @@ const WebpackPwaManifest = require('webpack-pwa-manifest');
 const path = require('path');
 const { InjectManifest } = require('workbox-webpack-plugin');
 
-// TODO: Add and configure workbox plugins for a service worker and manifest file.
-// TODO: Add CSS loaders and babel to webpack.
-
+// this is the webpack configuration object
 module.exports = () => {
   return {
     mode: 'development',
@@ -23,12 +21,12 @@ module.exports = () => {
         swDest: 'src-sw.js',
         exclude: [/\.map$/, /asset-manifest\.json$/],
       }),
-
+// this will create a new html file with the title 'Progressive Web Application'
       new HtmlWebpackPlugin({
         title: 'Progressive Web Application',
         template:'./index.html',
       }),
-
+//this will create a new manifest file
       new WebpackPwaManifest({
         fingerprints: false,
         inject: true,
