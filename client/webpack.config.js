@@ -26,8 +26,7 @@ module.exports = () => {
 
       new HtmlWebpackPlugin({
         title: 'Progressive Web Application',
-        template: './dist/index.html',
-        filename: './index.html',
+        template:'./index.html',
       }),
 
       new WebpackPwaManifest({
