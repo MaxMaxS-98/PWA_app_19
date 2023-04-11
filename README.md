@@ -1,5 +1,5 @@
 # <PWA>
-
+![Alt text](Screenshot%202023-04-10%20at%209.10.04%20PM%20(2).png)
 ## Description
 
 This is a progressive web application JATE (Just Another Todo App) that allows users to add, edit, and delete tasks. The application is built using React and uses IndexDB to store the tasks locally. The application is also a PWA that can be installed on the user's device.
